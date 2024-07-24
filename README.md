@@ -2,8 +2,11 @@
 
 ### Running the code
 
-Install requirements.
-To run tests, make sure you installed ``pytest pytest-mock``.
+Install requirements and pytest-mock.
+
+``pip install -r requirements.txt``
+
+``pip install pytest pytest-mock``
 
 To run the pipeline, first run the command to start mlflow tracking uri.
 
