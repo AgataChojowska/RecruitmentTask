@@ -1,3 +1,4 @@
+import os
 import mlflow
 import pickle
 import argparse
@@ -15,6 +16,12 @@ if __name__ == "__main__":
             model = pickle.load(file)
 
             predictions = model.get_forecast(steps=args.predict_next_quarters).predicted_mean
-            predictions.to_csv("data/predicted/predictions.csv")
             print(predictions)
+
+            directory = "data/predicted"
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            file_path = os.path.join(directory, "predictions.csv")
+            predictions.to_csv(file_path)
+
 

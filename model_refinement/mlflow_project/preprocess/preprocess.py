@@ -1,6 +1,8 @@
+import os
 import mlflow
 import pandas as pd
 import pickle
+from pathlib import Path
 
 from helpers import get_dates_as_index, convert_to_time_series
 
@@ -32,7 +34,12 @@ if __name__ == "__main__":
             # Combining original and new data. Now they both have datetime index.
             combined_series = pd.concat([original_series, new_series])
             df = combined_series.to_frame(name='volumeSales')
-            df.to_csv(f"data/preprocessed/preprocessed_data.csv")
+
+            directory = "data/preprocessed"
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            file_path = os.path.join(directory, "preprocessed_data.csv")
+            df.to_csv(file_path)
 
 
 

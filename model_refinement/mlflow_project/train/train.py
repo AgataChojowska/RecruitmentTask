@@ -1,3 +1,4 @@
+import os
 import warnings
 import argparse
 from model_tuner import SARIMAXTuner
@@ -42,7 +43,12 @@ if __name__ == "__main__":
         mlflow.sklearn.log_model(best_model_results, "model", signature=signature)
 
         # Saving the model to use for inferring in the next pipeline step.
-        with open(f"predict/models/model.pkl", 'wb') as file:
+        directory = "predict/models"
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        file_path = os.path.join(directory, "model.pkl")
+
+        with open(file_path, 'wb') as file:
             pickle.dump(best_model_results, file)
 
 
