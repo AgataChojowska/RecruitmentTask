@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 if __name__ == '__main__':
-    data_handler = DBHandler(db_name="sales2.db")
+    data_handler = DBHandler(db_name="sales3.db")
     if not data_handler.table_exists("historical_sales_volume"):
         data_handler.create_table_from_csv(csv_file="historical_sales_volume.csv", table_name="historical_sales_volume")
 
