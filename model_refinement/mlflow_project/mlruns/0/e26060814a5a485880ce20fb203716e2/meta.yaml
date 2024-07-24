@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/agatachojowska/PycharmProjects/alten_recruitment/model_refinement/mlflow_project/mlruns/0/e26060814a5a485880ce20fb203716e2/artifacts
+end_time: 1721771606543
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e26060814a5a485880ce20fb203716e2
+run_name: preprocess
+run_uuid: e26060814a5a485880ce20fb203716e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721771602970
+status: 3
+tags: []
+user_id: agatachojowska

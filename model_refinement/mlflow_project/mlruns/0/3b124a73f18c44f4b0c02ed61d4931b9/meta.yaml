@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/agatachojowska/PycharmProjects/alten_recruitment/model_refinement/mlflow_project/mlruns/0/3b124a73f18c44f4b0c02ed61d4931b9/artifacts
+end_time: 1721776331375
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b124a73f18c44f4b0c02ed61d4931b9
+run_name: masked-robin-276
+run_uuid: 3b124a73f18c44f4b0c02ed61d4931b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721776327996
+status: 3
+tags: []
+user_id: agatachojowska

@@ -1,0 +1,17 @@
+name: sales_pipeline
+
+conda_env: conda.yaml
+
+entry_points:
+
+  preprocess:
+    command: "python preprocess/preprocess.py"
+
+  train:
+    command: "python train/train.py"
+
+  predict:
+    command: "python predict/predict.py"
+
+  main:
+    command: "python main.py"

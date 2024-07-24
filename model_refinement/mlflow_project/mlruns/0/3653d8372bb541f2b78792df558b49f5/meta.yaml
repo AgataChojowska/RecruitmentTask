@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/agatachojowska/PycharmProjects/alten_recruitment/model_refinement/mlflow_project/mlruns/0/3653d8372bb541f2b78792df558b49f5/artifacts
+end_time: 1721776625496
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3653d8372bb541f2b78792df558b49f5
+run_name: respected-moth-318
+run_uuid: 3653d8372bb541f2b78792df558b49f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721776621709
+status: 3
+tags: []
+user_id: agatachojowska
